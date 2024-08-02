@@ -25,7 +25,7 @@ public class Verify_user_is_able_to_add_adress_or_not extends Working_baseclass 
 		test.log(Status.PASS,"myadress dispalyed");
 		Working_myadress myadress=new Working_myadress(driver);
 		myadress.getAdrsstxtfld().click();
-		
+		 
 		test.log(Status.PASS,"addadress page dispalyed");
 		Working_addadress addadress=new Working_addadress(driver);
 		addadress.getAddadrsbtn().click();

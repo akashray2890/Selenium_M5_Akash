@@ -16,14 +16,13 @@ public class verify_user_is_able_delet_or_not_Test extends Working_baseclass {
 		 homePage.getProfilebtn().click();
 		 
 		 
-		 Working_addadress addaress=new Working_addadress(driver);
-		 addaress.getAddadrsbtn().click();
 		 
 		 Working_myadress myadrs=new Working_myadress(driver);
 		 myadrs.getAdrsstxtfld().click();
+		
+
+		 Working_addadress addaress=new Working_addadress(driver);
 		 
-		 
-		 Thread.sleep(2000);
 		 
 		 addaress.getDltbtn().click();
 		 Thread.sleep(2000);

@@ -82,7 +82,7 @@ public class Working_baseclass {
 		
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		driver.get(url);
 		homePage =new Working_Homepage(driver);
 	}
@@ -92,9 +92,9 @@ public class Working_baseclass {
 		Welcome_page welcome=new Welcome_page(driver);
 		WebElement ele = welcome.getLogin();
 		
-		WebDriverWait  wait=new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait  wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
-		
+		Thread.sleep(3000);
 		ele.click();
 		//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(50));
 		//wait.until(ExpectedConditions.elementToBeClickable(By.id("loginBtn")));
